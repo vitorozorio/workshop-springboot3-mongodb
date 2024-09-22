@@ -6,6 +6,7 @@ import com.nelioalves.workshopmongodb.services.exeption.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UserService {
@@ -17,13 +18,9 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    /**
     public User findById(String id) {
-        User user = userRepository.findOne(id);
-        if (user == null) {
-            throw new ObjectNotFoundException("Objeto não encontrado");
-        }
-        return user;
-    } **/
+        Optional<User> obj = userRepository.findById(id);
+        return obj.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado"));
+    }
 
 }
