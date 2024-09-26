@@ -22,7 +22,7 @@ public class Post implements Serializable {
     private String body;
     private AuthorDTO author;
 
-    public Post() {
+    public Post(Post obj) {
 
     }
 
