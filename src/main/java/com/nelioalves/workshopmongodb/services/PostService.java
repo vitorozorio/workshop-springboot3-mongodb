@@ -5,6 +5,8 @@ import com.nelioalves.workshopmongodb.repository.PostRepository;
 import com.nelioalves.workshopmongodb.services.exeption.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -17,5 +19,6 @@ public class PostService {
         Optional<Post> obj = repo.findById(id);
         return obj.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado"));
     }
+    
 
 }
