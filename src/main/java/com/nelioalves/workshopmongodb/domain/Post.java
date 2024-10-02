@@ -4,7 +4,6 @@ import com.nelioalves.workshopmongodb.dto.AuthorDTO;
 import com.nelioalves.workshopmongodb.dto.CommentDTO;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -99,4 +98,5 @@ public class Post implements Serializable {
     public int hashCode() {
         return Objects.hashCode(id);
     }
+
 }
