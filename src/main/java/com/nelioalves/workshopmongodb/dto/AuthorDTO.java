@@ -1,7 +1,6 @@
 package com.nelioalves.workshopmongodb.dto;
 
 import com.nelioalves.workshopmongodb.domain.User;
-
 import java.io.Serial;
 import java.io.Serializable;
 
