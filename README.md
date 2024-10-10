@@ -21,7 +21,6 @@
 
 * [Descrição do Projeto](#descrição-do-projeto)
 * [Funcionalidades](#funcionalidades)
-* [Aplicação](#aplicação)
 * [Técnicas e tecnologias utilizadas](#técnicas-e-tecnologias-utilizadas)
 * [Acesso ao Projeto](#acesso-ao-projeto)
 
